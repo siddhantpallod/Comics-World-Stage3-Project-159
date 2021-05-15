@@ -12,8 +12,8 @@ AFRAME.registerComponent('info-banner', {
             'superman': {
                 bannerUrl : '../assets/superman-banner.jpg',
                 title: 'Superman',
-                releasedYear = '1983',
-                description = 'Superman is an ongoing American comic book series featuring the DC Comics superhero Superman as its main protagonist. Superman began as one of several anthology features in the National Periodical Publications comic book Action Comics in June 1938. The strip proved so popular that National launched Superman into his own self-titled comic book, the first for any superhero, premiering with the cover date Summer 1939.'
+                releasedYear : '1983',
+                description : 'Superman is an ongoing American comic book series featuring the DC Comics superhero Superman as its main protagonist. Superman began as one of several anthology features in the National Periodical Publications comic book Action Comics in June 1938. The strip proved so popular that National launched Superman into his own self-titled comic book, the first for any superhero, premiering with the cover date Summer 1939.'
             },
             'spiderman': {
                 bannerUrl: '../assets/spiderman-banner.png',
@@ -21,7 +21,7 @@ AFRAME.registerComponent('info-banner', {
                 releasedYear: '1962',
                 description: 'Spider-Man is a fictional superhero created by writer-editor Stan Lee and writer-artist Steve Ditko. He first appeared in the anthology comic book Amazing Fantasy (Aug. 1962) in the Silver Age of Comic Books.'
             },
-            'captain-aero': {
+            'caption-aero': {
                 bannerUrl: '../assets/captain-aero-banner.jpg',
                 title: 'Captain Aero',
                 releasedYear: '1942',
@@ -43,7 +43,7 @@ AFRAME.registerComponent('info-banner', {
         entity.setAttribute('visible', true)
         entity.setAttribute('id', `${itemId}-banner`)
         entity.setAttribute('geometry', {
-            primitive: plane,
+            primitive: 'plane',
             width: 0.9,
             height: 1
         })
@@ -100,7 +100,7 @@ AFRAME.registerComponent('info-banner', {
             color: 'white',
             value: item.description
         })
-        entity.setAttribute('position', {x:-0.4, y:-0.25, z:0.05})
+        entity.setAttribute('position', {x:-0.9, y:-0.25, z:0.05})
         return entity
     }
 })

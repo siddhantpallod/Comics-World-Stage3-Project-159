@@ -52,7 +52,7 @@ AFRAME.registerComponent('posters', {
         entity.setAttribute('position', position)
         entity.setAttribute('material', {
             color: 'white', 
-            opacoty: 1
+            opacity: 1
         })
 
         entity.setAttribute('cursor-listener', {})
